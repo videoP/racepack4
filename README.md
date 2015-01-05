@@ -1,4 +1,4 @@
-Racepack4.
+Racepack4...
 
 Install the japro_entities.def inside your gamedata/japro/scripts folder (make sure that gamedata folder is the same as GTKs basepath when you do file->project settings).
 
