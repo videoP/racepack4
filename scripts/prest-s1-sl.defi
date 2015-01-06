@@ -1,0 +1,8 @@
+{
+map		"prest-s1-sl"
+longname        "prest-s1-sl"
+author          "P. Restigious Mapper"
+vq3		"1"
+cpm		"1"
+style 		"run"
+}
