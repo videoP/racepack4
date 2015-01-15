@@ -1,3 +1,64 @@
+textures/racepack4/decalGo
+{
+	qer_editorimage textures/racepack4/decalGo
+	surfaceparm nonsolid
+	surfaceparm nonopaque
+	surfaceparm trans
+	surfaceparm nomarks
+	surfaceparm nolightmap
+	cull twosided
+	q3map_nolightmap
+	q3map_novertexshadows
+   	nopicmip
+      {
+	map textures/racepack4/decalGo
+	blendFunc GL_ONE GL_ZERO
+	alphaFunc GE128
+	depthWrite
+	rgbGen identity
+      }
+}
+
+textures/racepack4/decalAction
+{
+	qer_editorimage textures/racepack4/decalAction
+	surfaceparm nonsolid
+	surfaceparm nonopaque
+	surfaceparm trans
+	surfaceparm nomarks
+	surfaceparm nolightmap
+	cull twosided
+	q3map_nolightmap
+	q3map_novertexshadows
+   	nopicmip
+      {
+	map textures/racepack4/decalAction
+	blendFunc GL_ONE GL_ZERO
+	alphaFunc GE128
+	depthWrite
+	rgbGen identity
+      }
+}
+
+textures/racepack4/light
+{
+	qer_editorimage	textures/colors/white
+	qer_trans	0.7
+	surfaceparm nomarks
+	surfaceparm nonsolid
+	surfaceparm nonopaque
+	surfaceparm trans
+	surfaceparm nolightmap
+	q3map_lightRGB 1 1 1
+	q3map_nolightmap
+	q3map_surfacelight 350
+	{
+	map $whiteimage
+	rgbGen const ( 0.000000 0.000000 0.000000 )
+	blendFunc GL_ONE GL_ONE
+	}
+}
+
 textures/racepack4/dust2_sky
 {
 	q3map_lightimage	textures/colors/white
