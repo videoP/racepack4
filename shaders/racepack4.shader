@@ -144,3 +144,129 @@ textures/racepack4/metalfloor_wall_14_specular
 		alphaGen lightingSpecular
 	}
 }
+
+textures/racepack4/e7trimlight
+{
+	qer_editorimage textures/racepack4/e7trimlight.tga
+	q3map_lightimage textures/racepack4/e7trimlight.blend.tga
+	surfaceparm nomarks
+	q3map_surfacelight 700
+	{
+		map $lightmap 
+		rgbGen identity
+		tcGen lightmap 
+	}
+	{
+		map textures/racepack4/e7trimlight.tga
+		blendfunc filter
+		rgbGen identity
+	}
+	{
+		map textures/racepack4/e7trimlight.blend.tga
+		blendfunc add
+		rgbGen identity
+	}
+}
+
+textures/racepack4/glass01
+{
+        surfaceparm trans	
+	cull none
+	qer_trans 	0.5
+     
+        {
+		map textures/racepack4/tinfx.tga
+                tcgen environment
+		blendFunc GL_ONE GL_ONE
+		rgbGen identity
+	}
+        {
+		map $lightmap
+		rgbGen identity
+		blendFunc filter
+	}
+           
+}
+
+textures/racepack4/slime1
+{
+		qer_editorimage textures/racepack4/slime7.tga
+		q3map_lightimage textures/racepack4/slime7.tga
+		q3map_globaltexture
+		qer_trans .5
+
+		surfaceparm noimpact
+		surfaceparm slime
+		surfaceparm nolightmap
+		surfaceparm trans		
+
+		q3map_surfacelight 100
+		tessSize 32
+		cull disable
+
+		deformVertexes wave 100 sin 0 1 .5 .5
+
+		{
+			map textures/racepack4/slime7c.tga
+			tcMod turb .3 .2 1 .05
+			tcMod scroll .01 .01
+		}
+	
+		{
+			map textures/racepack4/slime7.tga
+			blendfunc GL_ONE GL_ONE
+			tcMod turb .2 .1 1 .05
+			tcMod scale .5 .5
+			tcMod scroll .01 .01
+		}
+
+		{
+			map textures/racepack4/bubbles.tga
+			blendfunc GL_ZERO GL_SRC_COLOR
+			tcMod turb .2 .1 .1 .2
+			tcMod scale .05 .05
+			tcMod scroll .001 .001
+		}		
+
+}
+
+textures/racepack4/slime1_2000
+{
+		qer_editorimage textures/racepack4/slime7.tga
+		q3map_lightimage textures/racepack4/slime7.tga
+		q3map_globaltexture
+		qer_trans .5
+
+		surfaceparm noimpact
+		surfaceparm slime
+		surfaceparm nolightmap
+		surfaceparm trans		
+
+		q3map_surfacelight 2000
+		tessSize 32
+		cull disable
+
+		deformVertexes wave 100 sin 0 1 .5 .5
+
+		{
+			map textures/racepack4/slime7c.tga
+			tcMod turb .3 .2 1 .05
+			tcMod scroll .01 .01
+		}
+	
+		{
+			map textures/racepack4/slime7.tga
+			blendfunc GL_ONE GL_ONE
+			tcMod turb .2 .1 1 .05
+			tcMod scale .5 .5
+			tcMod scroll .01 .01
+		}
+
+		{
+			map textures/racepack4/bubbles.tga
+			blendfunc GL_ZERO GL_SRC_COLOR
+			tcMod turb .2 .1 .1 .2
+			tcMod scale .05 .05
+			tcMod scroll .001 .001
+		}		
+}
