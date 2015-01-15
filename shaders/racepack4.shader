@@ -1,3 +1,77 @@
+textures/racepack4/Pad_Glass
+{
+	qer_editorimage	textures/common/etest4
+	qer_trans	0.6
+	surfaceparm	nonopaque
+	surfaceparm	forcefield
+	surfaceparm	trans
+	q3map_material	Glass
+	q3map_nolightmap
+    {
+        map textures/common/etest4
+        blendFunc GL_ONE GL_ONE
+        tcGen environment
+    }
+}
+
+textures/racepack4/brushed_metal
+{
+	q3map_forcemeta
+	q3map_shadeangle 60
+	qer_editorimage textures/racepack4/brushed_metal
+	{
+		map textures/racepack4/skybox_envmap.tga
+		tcGen environment
+	}
+	{
+		map textures/racepack4/brushed_metal.tga
+		blendFunc GL_ZERO GL_ONE_MINUS_SRC_COLOR
+		rgbGen identity
+	}
+	{
+		map $lightmap
+		blendFunc GL_DST_COLOR GL_ZERO
+		rgbGen identity
+	}
+}
+
+textures/racepack4/wateroil
+{
+	qer_editorimage	textures/byss/env_large_floor
+	qer_trans	0.1
+	surfaceparm	nonsolid
+	surfaceparm	nonopaque
+	surfaceparm	water
+	surfaceparm	trans
+	q3map_material	Water
+	deformvertexes	wave	200 sin 1 1.5 0 2
+    {
+        map textures/byss/env_large_floor
+        blendFunc GL_ONE GL_SRC_ALPHA
+	tcGen environment
+        alphaFunc GE128
+	alphaGen const 1.0
+	tcMod turb 0.01 0.03 5 0.1
+	tcMod stretch noise 1 0.01 1 1
+    }
+    {
+        map $lightmap
+	blendFunc GL_DST_COLOR GL_ZERO
+    }
+}
+
+textures/racepack4/StormyDays
+{
+	qer_editorimage	textures/racepack4/skybox_envmap.tga
+	surfaceparm	sky
+	surfaceparm	noimpact
+	surfaceparm	nomarks
+	notc
+	q3map_nolightmap
+	q3map_skylight 1750 5
+	skyParms	textures/racepack4/StormyDays 512 -
+}
+
 textures/racepack4/decalGo
 {
 	qer_editorimage textures/racepack4/decalGo
