@@ -23,7 +23,7 @@ textures/racepack4/atsea
 	q3map_lightsubdivide 256
 	q3map_surfacelight 66
 	q3map_sun 1 1 1 66 0 62
-	skyparms textures/racepack4atsea - -
+	skyparms textures/racepack4/atsea - -
 }
 
 textures/racepack4/siwa_water_2
@@ -65,5 +65,21 @@ textures/racepack4/siwa_water_2
 		rgbGen wave sin 0.4 0.02 0 0.3
 		tcmod transform 0 1.5 1 1.5 2 1
 		tcmod scroll .005 -.001
+	}
+}
+
+textures/racepack4/metalfloor_wall_14_specular
+{
+	qer_editorimage textures/racepack4/metalfloor_wall_14_specular.tga
+	{
+		map $lightmap
+		rgbgen identity      
+	}
+	
+	{
+		map textures/racepack4/metalfloor_wall_14_specular.tga
+		blendFunc GL_DST_COLOR GL_SRC_ALPHA
+		rgbGen identity
+		alphaGen lightingSpecular
 	}
 }
