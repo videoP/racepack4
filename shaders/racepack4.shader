@@ -63,12 +63,13 @@ textures/racepack4/wateroil
 textures/racepack4/StormyDays
 {
 	qer_editorimage	textures/racepack4/skybox_envmap.tga
-	surfaceparm	sky
-	surfaceparm	noimpact
-	surfaceparm	nomarks
-	notc
-	q3map_nolightmap
-	q3map_skylight 1750 5
+	surfaceparm sky
+	surfaceparm noimpact
+	surfaceparm nolightmap
+	q3map_globaltexture
+	q3map_lightsubdivide 256
+	q3map_surfacelight 66
+	q3map_sun 1 1 1 75 0 62
 	skyParms	textures/racepack4/StormyDays 512 -
 }
 
@@ -137,9 +138,9 @@ textures/racepack4/dust2_sky
 {
 	q3map_lightimage	textures/colors/white
 	qer_editorimage	textures/skies/sky.tga
-	q3map_surfacelight	600
+	q3map_surfacelight	500
 	q3map_lightsubdivide	512
-	sun 1 1 0.95 400 300 50
+	sun 1 1 0.95 150 300 50
 	surfaceparm	sky
 	surfaceparm	noimpact
 	surfaceparm	nomarks
@@ -157,7 +158,7 @@ textures/racepack4/atsea
 	q3map_globaltexture
 	q3map_lightsubdivide 256
 	q3map_surfacelight 66
-	q3map_sun 1 1 1 66 0 62
+	q3map_sun 1 1 1 75 0 62
 	skyparms textures/racepack4/atsea - -
 }
 
