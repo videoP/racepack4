@@ -1,8 +1,0 @@
----FINISHED--- Ntx2 (floaty narrow pads, yavin skybox map)
-Run1 (yellow/gray/green indoor map)
-Wtf (blue map, good up until trigger push finish, get rid of trigger push)
----FINISHED--- Cat (dark map, good corners)
-Mafmatics (yellow/gray/greenish, long straightaway at end)
----FINISHED---Toxicshock (w3sp map, have to get rid of doors though, maybe that weird start clip?)
----FINISHED--- acro08 (a nice short map)
-Possibly df_cpm10_d (simple map, kinda dumb n short, mostly just a straightaway?)
